@@ -1,0 +1,11 @@
+{% if wzrost > 190 %}
+    <p>wow Ale jestes wysoki</p>
+{% elif wzrost > 175 %}
+    <p> jestes wysoki</p>
+{% elif wzrost > 165 %}
+    <p> jestes przecietny</p>
+{% elif wzrost < 165 and wzrost > 120 %}
+    <p> jeste poniżej przeciętnej</p>
+{% elif wzrost <  120 %}
+    <p>kurdupel</p>
+{% endif %}

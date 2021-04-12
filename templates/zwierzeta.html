@@ -1,0 +1,11 @@
+moje zwierzaki to :
+<ul>
+    {% for zwierze in zwierzaki %}
+        <li>{{ zwierze }}</li>
+        <ul>
+        {%  for x in zwierze %}
+            <li>{{ x }}</li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+</ul>
