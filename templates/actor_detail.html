@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <p> imie <input type="text" name="imie" value="{{ object.first_name }}"> </p>
+        <p> nazwisko <input type="text" name="nazwisko" value="{{ object.last_name }}"> </p>
+        <p> biografia <input type="text" name="description" value="{{ object.description }}"> </p>
+        <p><input type="submit"> </p>
+    </form>
+
+{% endblock %}

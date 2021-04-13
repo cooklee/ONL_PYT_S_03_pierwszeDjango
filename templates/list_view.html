@@ -7,7 +7,7 @@
     </form>
 <ul>
     {% for object in object_list %}
-        <li>{{ object }}</li>
+        <li><a href="{{object.get_absolute_url}}"> {{ object }}</a> <a href="{{ object.delete_url }}">x</a> </li>
     {% endfor %}
 </ul>
 {% endblock %}

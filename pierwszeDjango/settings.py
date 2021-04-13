@@ -71,11 +71,14 @@ WSGI_APPLICATION = 'pierwszeDjango.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+#filmoteka
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'filmoteka',
+        'HOST': 'localhost',
+        'USER': 'postgres',
+        'PASSWORD': 'vetjopoco'
     }
 }
 

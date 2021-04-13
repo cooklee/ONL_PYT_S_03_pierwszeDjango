@@ -4,6 +4,7 @@
     <form method="post">
     {% csrf_token %}
         <p>tytuł :<input type="text" name="title"></p>
+        <p>rok :<input type="number" name="year"></p>
         <input type="submit">
     </form>
 {% endblock %}

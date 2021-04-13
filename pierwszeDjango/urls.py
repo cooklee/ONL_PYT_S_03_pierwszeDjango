@@ -22,7 +22,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.index),
     path("filmy/", views.filmy),
-    path("kina/", views.kina),
+    path("film/<int:id>/", views.filmy),
+    # path("kina/", views.kina),
     path("aktorzy/", views.aktorzy),
+    path("aktor/<int:id>/", views.detail_actor_view),
     path("dodaj_film/", views.dodaj_film),
+    path("dodaj_aktora/",views.dodaj_aktora),
+    path("delete/person/<int:id>/", views.delete_person_view)
 ]
